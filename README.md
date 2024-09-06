@@ -104,6 +104,8 @@ Tools and utilities installable on more than 1 major OS.
 
 I'm not much of a programmer, but I do enjoy tinkering with languages, specifically Python, Bash, and PowerShell. This section covers some useful packages and tooling I use regularly, or I think are worth mentioning as an "awesome" addition to your stack.
 
+---
+
 ### Python
 
 [Python](https://www.python.org) is a flexible and powerful programming language well suited to a great many tasks. The language is "interpreted" (versus a compiled language where your code is compiled into a distributable binary, i.e. a Linux binary or Windows `.exe`). When you run Python code, your code is "translated" from source code directly to bytecode, and your shell executes that bytecode. This leads to some compilation overhead, and you may notice a delay between running your script with the `python` command and the program actually executing. Once the code is transpiled, the program will execute as fast as Python's [Global Interpreter Lock (GIL)](https://realpython.com/python-gil/) will allow.
