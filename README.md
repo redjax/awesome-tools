@@ -52,6 +52,8 @@ Where to start...where to end! The list of usefulness I've found for Linux OSes 
 
 Here are some of the best distributions, sorted by their family tree (Debian, RedHat, or "other"/independent).
 
+---
+
 #### Debian Family
 
 Debian, the root ancestor for all distributions that use the `.deb` packaging format, is a rock-solid, stable, familiar OS that "runs on anything." The Debian OS is incredibly stable, and runs on a wide variety of hardware. Debian serves as the base image for a number of popular Linux distributions/"flavors," including Ubuntu, Kali Linux, the Raspberry Pi OS, and more.
@@ -65,6 +67,8 @@ Debian, the root ancestor for all distributions that use the `.deb` packaging fo
 - [Kali Linux](https://www.kali.org) - The defacto penetration testing distribution. Kali Linux is a continuation of the [Backtrack Linux](https://www.backtrack-linux.org) project (discontinued in 2013), and is arguably the most popular security-oriented Linux distributions available. Installable on a wide range of hardware, including [Android phones](https://www.kali.org/docs/nethunter/), Kali is a portable, powerful, and approachable tool for learning Linux, penetration testing, cybersecurity, and computer forensics. There is a large community of users with many great YouTube videos, guides/how-tos, and other forms of community support.
 - [Parrot OS](https://www.parrotsec.org) - An alternative/competitor to Kali Linux, this distribution focuses on being a versatile pentesting and computer forensics OS. Parrot can be booted from a USB stick as a live image, or installed to a disk and used as a persistent OS. It is aimed at providing a suite of pentesting and security tools that are more discoverable & easier to use than Kali, Parrot tends to prefer GUI versions of popular tools like NMAP (the CLI versions are also available/installed).
 
+---
+
 #### RedHat Family
 
 RedHat is an enterprise-grade Linux distribution that, similarly to Debian Linux, serves as the base for a number of popular downstream Linux distributions. RedHat uses the `.rpm` packaging system, distinguishing itself from the `.deb` ecosystem. Backed by the IBM corporation after a [buyout](https://www.redhat.com/en/ibm) of the RedHat Corporation [in 2019](https://www.redhat.com/en/about/press-releases/ibm-closes-landmark-acquisition-red-hat-34-billion-defines-open-hybrid-cloud-future), RedHat is one of the oldest Linux distributions. Its aim is to be a stable, secure by default OS for enterprise users, while keeping a more up-to-date list of packages compared to Debian.
@@ -75,6 +79,8 @@ Although RedHat itself requires an enterprise license, the project provides a do
 - [Fedora](https://fedoraproject.org/) - Officially maintained by the RedHat enterprise, Fedora is compatible with the `.rpm` packaging system, and is meant as a "bleeding edge" testbed for RedHat Enterprise Linux. Fedora gets package and OS updates before RedHat, and the community tests and refines these releases by using Fedora as their OS, improving each release of RedHat.
 - [Alma Linux](https://almalinux.org/) - With the [death of CentOS](https://www.redhat.com/en/blog/centos-linux-going-end-life-what-does-mean-me), a number of distributions have popped up to fill the "binary-compatible with RedHat, enterprise grade, consumer edition" of RedHat Enterprise Linux.
 - [Rocky Linux](https://rockylinux.org) - Another successor to CentOS, Rocky Linux was started by one of the original founders of CentOS in response to its discontinuation in 2019.
+
+---
 
 #### Other Linux
 
@@ -98,6 +104,8 @@ Tools and utilities installable on more than 1 major OS.
 
 I'm not much of a programmer, but I do enjoy tinkering with languages, specifically Python, Bash, and PowerShell. This section covers some useful packages and tooling I use regularly, or I think are worth mentioning as an "awesome" addition to your stack.
 
+---
+
 ### Python
 
 [Python](https://www.python.org) is a flexible and powerful programming language well suited to a great many tasks. The language is "interpreted" (versus a compiled language where your code is compiled into a distributable binary, i.e. a Linux binary or Windows `.exe`). When you run Python code, your code is "translated" from source code directly to bytecode, and your shell executes that bytecode. This leads to some compilation overhead, and you may notice a delay between running your script with the `python` command and the program actually executing. Once the code is transpiled, the program will execute as fast as Python's [Global Interpreter Lock (GIL)](https://realpython.com/python-gil/) will allow.
@@ -115,6 +123,8 @@ Python's default/built-in package manager, [pip](https://docs.python.org/3/insta
 - [Mamba](https://mamba.readthedocs.io/en/latest/) - A fully compatible replacement for Conda that is much, much faster at resolving dependencies.
 - [Micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) - A small, statically linked binary that supports a subset of all `mamba` or `conda` commands, and is much, much faster than either.
 
+---
+
 #### Python Packages
 
 Python packages can be installed from a number of sources, the default being the official [Pypi](https://pypi.org) (Python Packaging Index). The [package managers](#package-managers) in the section above aid with installing dependencies, some of them use the Conda channels instead of Pypi.
@@ -126,11 +136,15 @@ Microsoft provides first-class support for interacting with Azure in Python by w
 - [Azure Core](https://pypi.org/project/azure-core/) - Provides an SDK for interacting with Microsoft Azure.
 - [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?tabs=managed-identity%2Croles-azure-portal%2Csign-in-azure-cli&pivots=blob-storage-quickstart-scratch) - Library for interacting with Azure Blob Storage.
 
+---
+
 ##### Configuration
 
 Stop hardcoding your secrets into your script! Configuration management is a widely debated topic with many competing philosophies on "best practice." Decoupling your configuration from your code, like with the [12-factor app](https://12factor.net) philosophy, provides a layer of security while also adding flexibility to your program. It is much easier to change a variable in your environment or a local file than it is to hunt for it throughout your code.
 
 - [Dynaconf](https://www.dynaconf.com) - A configuration management library that follows the [12-factor app](https://12factor.net) development principle. The main concept is to separate your configuration from application logic. Loads environment variables dynamically from your environment, `.toml` file(s), `.json` file(s), `.env` file(s), and more.
+
+---
 
 ##### Dev Tools
 
@@ -140,6 +154,8 @@ Tools to make developing Python packages easier/more robust.
 - [Nox](https://nox.thea.codes/en/stable/) - A cross-platform CLI tool that automates testing & more. An alternative to the [tox]() library, written entirely in Python. This allows for much more flexibility.
 - [pytest-xdist](https://pytest-xdist.readthedocs.io/en/stable/) - Extends the [pytest](https://docs.pytest.org/en/stable/) testing frametwork to allow for running multiple tests simultaneously.
 
+---
+
 ##### Database/ORM
 
 Python has many libraries for interacting with databases. SQLAlchemy is one of the most popular, and arguably the most worth learning. Many ORMs and database connectors offer similar functionality, but there are tradeoffs with nearly all of them. SQLAlchemy is possibly the most "feature complete" ORM for Python, and in fact can act as a direct database driver if needed.
@@ -147,6 +163,8 @@ Python has many libraries for interacting with databases. SQLAlchemy is one of t
 This section will grow over time.
 
 - [SQLAlchemy](https://docs.sqlalchemy.org/en/latest/index.html) - One of (if not *the*) most flexible, powerful ORMs for Python. There is a learning curve with SQLAlchemy, but the new [ORM syntax](https://docs.sqlalchemy.org/en/20/orm/quickstart.html) in SQLAlchemy v2.0 makes the code more "Pythonic."
+
+---
 
 ##### Data Packages
 
@@ -156,6 +174,8 @@ This section will grow over time.
 - [DuckDB](https://duckdb.org/docs/api/python/overview.html) - An in-process database management system. Can load extremely large datasets to an in-memory database. Useful for loading a subset of data from a large database for local processing/analysis, instead of querying the database each time, you query it once, load the data into DuckDB, and then operate on your "local" copy. Can handle writing modifications back to the original database.
 - [Jupyter](https://jupyter.org) - Interactive notebooks that let you write code in "cells" which you execute manually. Great for data projects, prototyping, data processing, and more.
   > Note: If you are using a `.venv`, you must install the `ipykernel` package in the virtualenv for it to be detected as a useable kernel.
+
+---
 
 ##### HTTP utilities
 
