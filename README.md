@@ -2,7 +2,8 @@
   <img width="500" height="350" src="assets/img/logo.svg" alt="Awesome">
 </div>
 
-# Awesome Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <!-- omit in toc -->
+# Awesome Tools <!-- omit in toc -->
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 An awesome list of useful tools, OSes, utilities, and software packages.
 
@@ -28,6 +29,10 @@ An awesome list of useful tools, OSes, utilities, and software packages.
 
 ## Windows
 
+<div align="center">
+  <img width="500" height="350" src="assets/img/os_logos/microsoft.svg" alt="Microsoft Windows">
+</div>
+
 Tools for the Microsoft Windows OS.
 
 - [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) - Official package from Microsoft to add extra "power user" functionality, like caffeinate (keep your computer awake & unlocked for a configurable length of time), extract text from screenshots, color picker, monitor zones, & more.
@@ -41,8 +46,14 @@ Tools for the Microsoft Windows OS.
 - [Devolutions Remote Desktop Manager](https://devolutions.net/remote-desktop-manager/) - Free (with an optional paid edition that has features a team might use) RDP connection manager for Windows. You can organize your sessions into folders, and while it is geared at RDP, this tool supports a ton of connection types (`ssh`, `(s)ftp`), TeamViewer, Apple Remote Desktop, Azure/Amazon S3 storage, and many other types of connections. Also has an option of storing connections in an encrypted SQLite database, making importing/exporting sessions easy!
 - [Remote Desktop Connection Manager (RDCMan)](https://learn.microsoft.com/en-us/sysinternals/downloads/rdcman) - An official Microsoft tools for RDP sessions. Save your connections to a list, open multiple RDP connections from the same interface, script sessions, etc.
 - [Ventoy](https://ventoy.net/en/index.html) - A utility for creating bootable USB drives. Use the installer to create a Ventoy media, then you can simply drop `.iso` files on the drive. When you boot from the disk, Ventoy will automatically find all bootable ISOs and present them in a menu for you to boot from. For UEFI/secure-boot enabled devices, Ventoy provides a certificate you can install from the USB (created at the same time you install Ventoy on the drive, automatically) to enable booting from Ventoy without disabling/fiddling with secure boot.
+- 
+**[`^        back to top        ^`](#awesome-tools)**
 
 ## Linux
+
+<div align="center">
+  <img width="500" height="350" src="assets/img/os_logos/linux.svg" alt="Linux">
+</div>
 
 Where to start...where to end! The list of usefulness I've found for Linux OSes deserves its own awesome list! This is an incomplete list of some of my favorite tooling for Linux.
 
@@ -55,6 +66,10 @@ Here are some of the best distributions, sorted by their family tree (Debian, Re
 ---
 
 #### Debian Family
+
+<div align="center">
+  <img width="500" height="350" src="assets/img/os_logos/debian.svg" alt="Debian Linux">
+</div>
 
 Debian, the root ancestor for all distributions that use the `.deb` packaging format, is a rock-solid, stable, familiar OS that "runs on anything." The Debian OS is incredibly stable, and runs on a wide variety of hardware. Debian serves as the base image for a number of popular Linux distributions/"flavors," including Ubuntu, Kali Linux, the Raspberry Pi OS, and more.
 
@@ -71,6 +86,10 @@ Debian, the root ancestor for all distributions that use the `.deb` packaging fo
 
 #### RedHat Family
 
+<div align="center">
+  <img width="500" height="350" src="assets/img/os_logos/redhat.svg" alt="RedHat Linux">
+</div>
+
 RedHat is an enterprise-grade Linux distribution that, similarly to Debian Linux, serves as the base for a number of popular downstream Linux distributions. RedHat uses the `.rpm` packaging system, distinguishing itself from the `.deb` ecosystem. Backed by the IBM corporation after a [buyout](https://www.redhat.com/en/ibm) of the RedHat Corporation [in 2019](https://www.redhat.com/en/about/press-releases/ibm-closes-landmark-acquisition-red-hat-34-billion-defines-open-hybrid-cloud-future), RedHat is one of the oldest Linux distributions. Its aim is to be a stable, secure by default OS for enterprise users, while keeping a more up-to-date list of packages compared to Debian.
 
 Although RedHat itself requires an enterprise license, the project provides a downstream community edition with the Fedora OS distribution which you can use to familiarize with the RedHat ecosystem.
@@ -84,6 +103,12 @@ Although RedHat itself requires an enterprise license, the project provides a do
 
 #### Other Linux
 
+<div align="center">
+  <span><img width="350" height="150" src="assets/img/os_logos/archlinux.svg" alt="Arch Linux"></span>
+  <span><img width="350" height="150" src="assets/img/os_logos/alpine.svg" alt="Alpine Linux"></span>
+  <span><img width="350" height="150" src="assets/img/os_logos/nixos.svg" alt="NixOS"></span>
+</div>
+
 Independent Linux distributions that use their own package management system. These are not descendents of either Debian or RedHat, but use the same Linux kernel.
 
 - [Arch Linux](https://archlinux.org/) - I use Arch, btw. Arch linux is an independent distribution notorious for its incredibly useful & well-maintained [Arch Wiki](https://wiki.archlinux.org/). Arch is a "rolling release" distribution, meaning you do not have to reboot after most system updates. Many experienced Linux users recommend going through the [Arch OS installation](https://wiki.archlinux.org/title/Installation_guide) to gain a better understanding of the internals of a Linux OS. The idea behind Arch Linux is that you get "just enough OS" to boot your machine, with a very minimal OS install that you build up from by installing only the packages you need.
@@ -91,6 +116,8 @@ Independent Linux distributions that use their own package management system. Th
   - [Manjaro Linux](https://manjaro.org) - Manjaro, like EndeavorOS, provides an OS based on Arch Linux and compatible with Arch's package repository, while offering some default packages & configurations (as well as a graphical installer) to ease users into the Arch ecosystem.
 - [Alpine Linux](https://www.alpinelinux.org/) - Alpine Linux is a small and secure OS with its own package repositories and package management tool (`apk`). The image is commonly used as the base image for Docker containers.
 - [NixOS](https://nixos.org/) - A "declarative/immutable OS," where the OS is configured using a series of text files to describe a desired running state for your machine. This can include configurations like network interfaces, hostnames, base packages, etc. The idea behind Nix is that you can back your OS state up to version control like Git, and have a reproducible build so each time you install your OS, it matches your configuration 1-to-1. Configurations can be updated over time, and updates to the OS or packages use a "swapping" system so you do not need to reboot your machine to apply updates.
+
+**[`^        back to top        ^`](#awesome-tools)**
 
 ## Cross Platform
 
@@ -183,3 +210,9 @@ The [requests](https://docs.python-requests.org/en/latest/index.html) module is 
 
 - [HTTPX](https://www.python-httpx.org) - A fully-featured, fast, flexible HTTP client for Python that offers synchronous and asynchronous APIs, supports HTTP/1.1 and HTTP/2, and will feel familiar to `requests`. `httpx` is more configurable than `requests`, and can use plugins like `hishel` for caching.
 - [Hishel](https://hishel.com) - A caching library for HTTPX. Offers a highly configurable API for adding in-memory, file-based, and database-backed caches for HTTP responses made with the HTTPX library.
+
+**[`^        back to top        ^`](#awesome-tools)**
+
+## Credits <!-- omit in toc -->
+
+- [svgrepo.com](https://svgreo.com) - OS distribution icons
