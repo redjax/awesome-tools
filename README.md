@@ -21,6 +21,7 @@ An awesome list of useful tools, OSes, utilities, and software packages.
     - [Package Managers](#package-managers)
     - [Python Packages](#python-packages)
       - [Azure](#azure)
+      - [Automation](#automation)
       - [Configuration](#configuration)
       - [Dev Tools](#dev-tools)
       - [Database/ORM](#databaseorm)
@@ -121,6 +122,15 @@ Independent Linux distributions that use their own package management system. Th
 
 ## Cross Platform
 
+<div align="center">
+  <span><img width="350" height="150" src="assets/img/os_logos/linux.svg" alt="Linux"></span>
+  <span><img width="350" height="150" src="assets/img/os_logos/microsoft.svg" alt="Windows"></span>
+  <span><img width="350" height="150" src="assets/img/os_logos/apple.svg" alt="Apple"></span>
+  <!-- <span><img width="350" height="150" src="assets/img/os_logos/archlinux.svg" alt="Arch Linux"></span>
+  <span><img width="350" height="150" src="assets/img/os_logos/alpine.svg" alt="Alpine Linux"></span>
+  <span><img width="350" height="150" src="assets/img/os_logos/nixos.svg" alt="NixOS"></span> -->
+</div>
+
 Tools and utilities installable on more than 1 major OS.
 
 - [VLC](https://www.videolan.org/vlc/) - One of the best OSS projects on the Internet. VLC can open nearly any media file you will encounter, and has tools for converting between formats and encodings. The maintainer of VLC has [turned down millions of dollars](https://news.ycombinator.com/item?id=15372048) to implement ads and tracking into VLC, making this software trustworthy and hinting at strong leadership and adherence to the principles of open source software.
@@ -134,6 +144,10 @@ I'm not much of a programmer, but I do enjoy tinkering with languages, specifica
 ---
 
 ### Python
+
+<div align="center">
+  <img width="350" height="150" src="assets/img/programming_lang_logos/python.svg" alt="Arch Linux">
+</div>
 
 [Python](https://www.python.org) is a flexible and powerful programming language well suited to a great many tasks. The language is "interpreted" (versus a compiled language where your code is compiled into a distributable binary, i.e. a Linux binary or Windows `.exe`). When you run Python code, your code is "translated" from source code directly to bytecode, and your shell executes that bytecode. This leads to some compilation overhead, and you may notice a delay between running your script with the `python` command and the program actually executing. Once the code is transpiled, the program will execute as fast as Python's [Global Interpreter Lock (GIL)](https://realpython.com/python-gil/) will allow.
 
@@ -163,15 +177,15 @@ Microsoft provides first-class support for interacting with Azure in Python by w
 - [Azure Core](https://pypi.org/project/azure-core/) - Provides an SDK for interacting with Microsoft Azure.
 - [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?tabs=managed-identity%2Croles-azure-portal%2Csign-in-azure-cli&pivots=blob-storage-quickstart-scratch) - Library for interacting with Azure Blob Storage.
 
----
+##### Automation
+
+- [Ansible](https://docs.ansible.com/ansible/latest/index.html): Ansible is a versatile, powerful automation tool. It can connect to Windows, Mac, and Linux (although it works best with Linux) to handle automated tasks written as `.yaml` playbooks. Connects via SSH. I [manage my homelab with Ansible](https://github.com/redjax/ansible_homelab) and `nox`.
 
 ##### Configuration
 
 Stop hardcoding your secrets into your script! Configuration management is a widely debated topic with many competing philosophies on "best practice." Decoupling your configuration from your code, like with the [12-factor app](https://12factor.net) philosophy, provides a layer of security while also adding flexibility to your program. It is much easier to change a variable in your environment or a local file than it is to hunt for it throughout your code.
 
 - [Dynaconf](https://www.dynaconf.com) - A configuration management library that follows the [12-factor app](https://12factor.net) development principle. The main concept is to separate your configuration from application logic. Loads environment variables dynamically from your environment, `.toml` file(s), `.json` file(s), `.env` file(s), and more.
-
----
 
 ##### Dev Tools
 
@@ -181,8 +195,6 @@ Tools to make developing Python packages easier/more robust.
 - [Nox](https://nox.thea.codes/en/stable/) - A cross-platform CLI tool that automates testing & more. An alternative to the [tox]() library, written entirely in Python. This allows for much more flexibility.
 - [pytest-xdist](https://pytest-xdist.readthedocs.io/en/stable/) - Extends the [pytest](https://docs.pytest.org/en/stable/) testing frametwork to allow for running multiple tests simultaneously.
 
----
-
 ##### Database/ORM
 
 Python has many libraries for interacting with databases. SQLAlchemy is one of the most popular, and arguably the most worth learning. Many ORMs and database connectors offer similar functionality, but there are tradeoffs with nearly all of them. SQLAlchemy is possibly the most "feature complete" ORM for Python, and in fact can act as a direct database driver if needed.
@@ -190,8 +202,6 @@ Python has many libraries for interacting with databases. SQLAlchemy is one of t
 This section will grow over time.
 
 - [SQLAlchemy](https://docs.sqlalchemy.org/en/latest/index.html) - One of (if not *the*) most flexible, powerful ORMs for Python. There is a learning curve with SQLAlchemy, but the new [ORM syntax](https://docs.sqlalchemy.org/en/20/orm/quickstart.html) in SQLAlchemy v2.0 makes the code more "Pythonic."
-
----
 
 ##### Data Packages
 
@@ -201,8 +211,6 @@ This section will grow over time.
 - [DuckDB](https://duckdb.org/docs/api/python/overview.html) - An in-process database management system. Can load extremely large datasets to an in-memory database. Useful for loading a subset of data from a large database for local processing/analysis, instead of querying the database each time, you query it once, load the data into DuckDB, and then operate on your "local" copy. Can handle writing modifications back to the original database.
 - [Jupyter](https://jupyter.org) - Interactive notebooks that let you write code in "cells" which you execute manually. Great for data projects, prototyping, data processing, and more.
   > Note: If you are using a `.venv`, you must install the `ipykernel` package in the virtualenv for it to be detected as a useable kernel.
-
----
 
 ##### HTTP utilities
 
