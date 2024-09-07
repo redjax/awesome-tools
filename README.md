@@ -155,6 +155,10 @@ Below are some packages and tooling I use/have used that are worth sharing.
 
 #### Package Managers
 
+<div align="center">
+  <span><img width="250" height="150" src="assets/img/programming_lang_logos/package_manager.svg" alt="Package Manager"></span>
+</div>
+
 Python's default/built-in package manager, [pip](https://docs.python.org/3/installing/index.html), is a capable project manager with some shortcomings. These project managers approach Python project management from a more "modern" experience. Some of these package managers take inspiration from Rust's elegent [cargo](https://doc.rust-lang.org/cargo/) package manager.
 
 - [PDM](https://pdm-project.org) - A project management tool for Python. Handles project initialization & scaffolding, `.venv` creation, package management, building & publishing, and project scripts. Uses the [pyproject.toml](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/).
@@ -168,9 +172,17 @@ Python's default/built-in package manager, [pip](https://docs.python.org/3/insta
 
 #### Python Packages
 
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/programming_lang_logos/package.svg" alt="Package"></span>
+</div>
+
 Python packages can be installed from a number of sources, the default being the official [Pypi](https://pypi.org) (Python Packaging Index). The [package managers](#package-managers) in the section above aid with installing dependencies, some of them use the Conda channels instead of Pypi.
 
 ##### Azure
+
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/services/azure.svg" alt="Microsoft Azure"></span>
+</div>
 
 Microsoft provides first-class support for interacting with Azure in Python by way of the [Azure SDK for Python](https://learn.microsoft.com/en-us/azure/developer/python/sdk/azure-sdk-overview). You generally only need to install the `azure-core` library, but there are links to documentation for individual modules in the core package below.
 
@@ -179,15 +191,27 @@ Microsoft provides first-class support for interacting with Azure in Python by w
 
 ##### Automation
 
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/misc/automation.svg" alt="Microsoft Azure"></span>
+</div>
+
 - [Ansible](https://docs.ansible.com/ansible/latest/index.html): Ansible is a versatile, powerful automation tool. It can connect to Windows, Mac, and Linux (although it works best with Linux) to handle automated tasks written as `.yaml` playbooks. Connects via SSH. I [manage my homelab with Ansible](https://github.com/redjax/ansible_homelab) and `nox`.
 
 ##### Configuration
+
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/misc/settings_cog.svg" alt="Configuration"></span>
+</div>
 
 Stop hardcoding your secrets into your script! Configuration management is a widely debated topic with many competing philosophies on "best practice." Decoupling your configuration from your code, like with the [12-factor app](https://12factor.net) philosophy, provides a layer of security while also adding flexibility to your program. It is much easier to change a variable in your environment or a local file than it is to hunt for it throughout your code.
 
 - [Dynaconf](https://www.dynaconf.com) - A configuration management library that follows the [12-factor app](https://12factor.net) development principle. The main concept is to separate your configuration from application logic. Loads environment variables dynamically from your environment, `.toml` file(s), `.json` file(s), `.env` file(s), and more.
 
 ##### Dev Tools
+
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/misc/tools.svg" alt="Configuration"></span>
+</div>
 
 Tools to make developing Python packages easier/more robust.
 
@@ -197,6 +221,10 @@ Tools to make developing Python packages easier/more robust.
 
 ##### Database/ORM
 
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/database/db_generic.svg" alt="Configuration"></span>
+</div>
+
 Python has many libraries for interacting with databases. SQLAlchemy is one of the most popular, and arguably the most worth learning. Many ORMs and database connectors offer similar functionality, but there are tradeoffs with nearly all of them. SQLAlchemy is possibly the most "feature complete" ORM for Python, and in fact can act as a direct database driver if needed.
 
 This section will grow over time.
@@ -204,6 +232,10 @@ This section will grow over time.
 - [SQLAlchemy](https://docs.sqlalchemy.org/en/latest/index.html) - One of (if not *the*) most flexible, powerful ORMs for Python. There is a learning curve with SQLAlchemy, but the new [ORM syntax](https://docs.sqlalchemy.org/en/20/orm/quickstart.html) in SQLAlchemy v2.0 makes the code more "Pythonic."
 
 ##### Data Packages
+
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/database/data_flask.svg" alt="Data"></span>
+</div>
 
 - [Pandas](https://pandas.pydata.org) - The defacto Python dataframe library. Load datasets from Python `dict`s, `.parquet`/`.csv`/`.json` files, a database backend (using SQLAlchemy) or create on the fly. The dataframe is stored in memory and can act as an in-memory alternative to a database table.
 - [Polars](https://pola.rs) - A newer Python dataframe library, written in Rust. Some compatibility issues on certain platforms (like ARM64), which can be worked around. ~30x faster than other dataframe libraries, and a more "Pythonic" API.
@@ -213,6 +245,10 @@ This section will grow over time.
   > Note: If you are using a `.venv`, you must install the `ipykernel` package in the virtualenv for it to be detected as a useable kernel.
 
 ##### HTTP utilities
+
+<div align="center">
+  <span><img width="200" height="115" src="assets/img/misc/internet.svg" alt="HTTP"></span>
+</div>
 
 The [requests](https://docs.python-requests.org/en/latest/index.html) module is the defacto package for making HTTP requests an doing something with the response. There's nothing wrong with `requests`, but it is not an asynchronous library. The utilities below are alternatives to `requests` you can try if the `requests` packages do not cover your needs.
 
