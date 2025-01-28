@@ -183,3 +183,10 @@ The [requests](https://docs.python-requests.org/en/latest/index.html) module is 
 
 - [HTTPX](https://www.python-httpx.org) - A fully-featured, fast, flexible HTTP client for Python that offers synchronous and asynchronous APIs, supports HTTP/1.1 and HTTP/2, and will feel familiar to `requests`. `httpx` is more configurable than `requests`, and can use plugins like `hishel` for caching.
 - [Hishel](https://hishel.com) - A caching library for HTTPX. Offers a highly configurable API for adding in-memory, file-based, and database-backed caches for HTTP responses made with the HTTPX library.
+
+### Git
+
+#### Helpers & UIs
+
+- [Lazygit](https://github.com/jesseduffield/lazygit) - A cross-platform/shell terminal user interface (TUI) for common (and some uncommon) git operations. Helps avoid common traps & footguns & speeds up common operations like adding/committing code, merging, and handling/avoiding merge errors. A gentler introduction to git for new learners, & a shortcut to operations advanced users know by heart.
+
