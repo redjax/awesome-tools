@@ -25,6 +25,8 @@ An awesome list of useful tools, OSes, utilities, and software packages.
       - [Database/ORM](#databaseorm)
       - [Data Packages](#data-packages)
       - [HTTP utilities](#http-utilities)
+  - [Git](#git)
+    - [Helpers \& UIs](#helpers--uis)
 
 ## Windows
 
