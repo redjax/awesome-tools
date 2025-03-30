@@ -15,6 +15,8 @@ An awesome list of useful tools, OSes, utilities, and software packages.
     - [RedHat Family](#redhat-family)
     - [Other Linux](#other-linux)
 - [Cross Platform](#cross-platform)
+  - [Multimedia](#multimedia)
+  - [Networking](#networking)
 - [Programming](#programming)
   - [Python](#python)
     - [Package Managers](#package-managers)
@@ -101,9 +103,15 @@ Independent Linux distributions that use their own package management system. Th
 
 Tools and utilities installable on more than 1 major OS.
 
+### Multimedia
+
 - [VLC](https://www.videolan.org/vlc/) - One of the best OSS projects on the Internet. VLC can open nearly any media file you will encounter, and has tools for converting between formats and encodings. The maintainer of VLC has [turned down millions of dollars](https://news.ycombinator.com/item?id=15372048) to implement ads and tracking into VLC, making this software trustworthy and hinting at strong leadership and adherence to the principles of open source software.
 - [MPV](https://mpv.io/) - A versatile, cross-platform media player. Similar in spirit to VLC Media Player, MPV is well received by the community and even preferred over VLC by some.
 - [FFMPEG](https://ffmpeg.org) - The "swiss army knife" of media file conversion. Although this is a different tool from VLC, it performs a similar function, albeit from the CLI rather than with a GUI. The `ffmpeg` binary is cross-platform and emeddable, you can call it from the CLI or scripts, and the syntax is nice and easy! For example, to convert a `.mp4` to a `.avi`: `$> ffmpeg -i input.mp4 output.avi`
+
+### Networking
+
+- [HTTPie](https://httpie.io) - An open-source alternative to Postman. HTTPie is an HTTP request client with environment management. Build collections of API requests in an orderly way, useful for prototyping API programs or sharing requests with teams. Synchronizes the encrypted vault with your Github account so you can pick up where you left off on new machines.
 
 ## Programming
 
