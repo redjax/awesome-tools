@@ -17,6 +17,7 @@ An awesome list of useful tools, OSes, utilities, and software packages.
 - [Cross Platform](#cross-platform)
   - [Multimedia](#multimedia)
   - [Networking](#networking)
+  - [Tools \& Utilities](#tools--utilities)
 - [Programming](#programming)
   - [Python](#python)
     - [Package Managers](#package-managers)
@@ -112,6 +113,10 @@ Tools and utilities installable on more than 1 major OS.
 ### Networking
 
 - [HTTPie](https://httpie.io) - An open-source alternative to Postman. HTTPie is an HTTP request client with environment management. Build collections of API requests in an orderly way, useful for prototyping API programs or sharing requests with teams. Synchronizes the encrypted vault with your Github account so you can pick up where you left off on new machines.
+
+### Tools & Utilities
+
+- [LazyJournal](https://github.com/Lifailon/lazyjournal) - CLI/TUI app for Linux. LazyJournal can be used to read logs from `journald`, `auditd`, file system, Docker container, Podman, & more, with filtering & fuzzy finding. The app is a single binary, making installation simple, just run: `curl -sS https://raw.githubusercontent.com/Lifailon/lazyjournal/main/install.sh | bash`.
 
 ## Programming
 
